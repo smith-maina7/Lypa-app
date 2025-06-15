@@ -54,8 +54,8 @@
             </p>
             <!-- App Store Buttons -->
             <div class="flex gap-4">
-              <img src="../assets/images/appstore.png" alt="App Store" class="w-32 h-auto" />
-              <img src="../assets/images/image-95.png" alt="Google Play" class="w-32 h-auto" />
+              <img src="@/assets/images/appstore.png" alt="App Store" class="w-32 h-auto" />
+              <img src="@/assets/images/image95.png" alt="Google Play" class="w-32 h-auto" />
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@
         >
           <!-- Country selector -->
           <div class="flex items-center gap-4 rounded-full px-6 py-2 shadow-lg bg-white mt-8">
-            <img src="../assets/images/uae.png" alt="UAE Flag" class="h-7 w-12" />
+            <img src="@/assets/images/uae.png" alt="UAE Flag" class="h-7 w-12" />
             <span class="font-semibold text-3xl pl-10 m-4">United Arab Emirates</span>
             <span class="ml-auto text-[#FB527E]">▼</span>
           </div>
@@ -132,7 +132,7 @@
         <div
           class="flex flex-col items-center shadow-lg bg-white rounded-[30px] w-[320px] h-[320px] p-6"
         >
-          <img class="w-[200px] h-[200px]" src="@/assets/images/image-96.png" alt="Bill Payments" />
+          <img class="w-[200px] h-[200px]" src="@/assets/images/image96.png" alt="Bill Payments" />
           <div class="text-xl text-[#142944] mt-4 font-semibold text-center">Bill Payments</div>
         </div>
 
@@ -142,7 +142,7 @@
         >
           <img
             class="w-[150px] h-[19 0px]"
-            src="@/assets/images/image-97.png"
+            src="@/assets/images/image97.png"
             alt="Airtime Topup"
           />
           <div class="text-xl text-[#142944] mt-4 font-semibold text-center m-auto">
