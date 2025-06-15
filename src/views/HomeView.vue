@@ -54,8 +54,8 @@
             </p>
             <!-- App Store Buttons -->
             <div class="flex gap-4">
-              <img src="@/assets/images/appstore.png" alt="App Store" class="w-32 h-auto" />
-              <img src="@/assets/images/Image95.png" alt="Google Play" class="w-32 h-auto" />
+              <img src="../../assets/images/appstore.png" alt="App Store" class="w-32 h-auto" />
+              <img src="../../src/assets/images/Image95.png" alt="Google Play" class="w-32 h-auto" />
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@
         <div
           class="flex flex-col items-center shadow-lg bg-white rounded-[30px] w-[320px] h-[320px] p-6"
         >
-          <img class="w-[200px] h-[200px]" src="@/assets/images/Image96.png" alt="Bill Payments" />
+          <img class="w-[200px] h-[200px]" src="../../assets/images/Image96.png" alt="Bill Payments" />
           <div class="text-xl text-[#142944] mt-4 font-semibold text-center">Bill Payments</div>
         </div>
 
@@ -154,7 +154,7 @@
         <div
           class="flex flex-col items-center shadow-lg bg-white rounded-[30px] w-[320px] h-[320px] p-6 mb-30"
         >
-          <img class="w-[200px] h-[200px]" src="@/assets/images/world.png" alt="Send Money" />
+          <img class="w-[200px] h-[200px]" src="../../assets/images/world.png" alt="Send Money" />
           <div class="text-xl text-[#142944] mt-4 font-semibold text-center">Send Money</div>
         </div>
       </div>
