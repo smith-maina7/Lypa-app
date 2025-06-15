@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+   import { RouterLink } from 'vue-router';
+</script>
 
 <template>
   <main>
@@ -9,10 +11,21 @@
           <div id="logo" class="mt-10 text-3xl font-bold italic">lypa</div>
           <div id="nav" class="mt-10">
             <ul class="flex justify-center gap-6 text-lg">
-              <li class="cursor-pointer hover:text-gray-300">Deposit</li>
-              <li class="cursor-pointer hover:text-gray-300">Withdraw</li>
-              <li class="cursor-pointer hover:text-gray-300">Login</li>
-              <li class="cursor-pointer hover:text-gray-300 font-bold">Join</li>
+              <router-link to="/signin" class="cursor-pointer hover:text-gray-300">
+                 <li>Deposit</li>
+              </router-link>
+
+              <router-link to="/signin" class="cursor-pointer hover:text-gray-300">
+                <li>Withdraw</li>
+              </router-link>
+
+              <router-link to="/signin" class="cursor-pointer hover:text-gray-300">
+               <li>Login</li>
+              </router-link>
+
+              <router-link to="/signup" class="cursor-pointer hover:text-gray-300 font-bold">
+               <li>Join</li>
+              </router-link>
             </ul>
           </div>
         </nav>
