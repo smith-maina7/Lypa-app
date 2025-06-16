@@ -1,5 +1,5 @@
 <script setup>
-   import { RouterLink } from 'vue-router';
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
@@ -12,7 +12,7 @@
           <div id="nav" class="mt-10">
             <ul class="flex justify-center gap-6 text-lg">
               <router-link to="/signin" class="cursor-pointer hover:text-gray-300">
-                 <li>Deposit</li>
+                <li>Deposit</li>
               </router-link>
 
               <router-link to="/signin" class="cursor-pointer hover:text-gray-300">
@@ -20,11 +20,11 @@
               </router-link>
 
               <router-link to="/signin" class="cursor-pointer hover:text-gray-300">
-               <li>Login</li>
+                <li>Login</li>
               </router-link>
 
               <router-link to="/signup" class="cursor-pointer hover:text-gray-300 font-bold">
-               <li>Join</li>
+                <li>Join</li>
               </router-link>
             </ul>
           </div>
@@ -35,12 +35,16 @@
       <hr class="border-t border-white mt-5 mx-8" />
 
       <!-- Main content -->
-      <div class="flex flex-col lg:flex-row items-center px-10 mt-16 w-4/5 mx-auto">
+      <div
+        class="flex flex-col lg:flex-row items-center lg:items-end px-4 lg:px-10 mt-5 w-full lg:w-4/5 mx-auto space-y-8 lg:space-y-0 pb-12"
+      >
         <!-- Left side (text) -->
-        <div class="flex flex-col mt-8 pt-[52px] max-w-[700px] min-h-[700px]">
+        <div
+          class="flex flex-col justify-between mt-8 pt-[52px] w-full max-w-[700px] min-h-[700px]"
+        >
           <!-- Green Box -->
           <div
-            class="bg-gradient-to-b from-[#68EB75] to-[#0D6DB8] rounded-tr-[70px] p-6 w-6/7 mt-28 min-h-[220px]"
+            class="bg-gradient-to-b from-[#68EB75] to-[#0D6DB8] rounded-tr-[70px] p-6 w-[80%] min-h-[240px] mt-28"
           >
             <h1 class="text-4xl font-bold mt-10">Send Money to<br />Your Loved Ones</h1>
           </div>
@@ -52,7 +56,6 @@
               everything. Send money from UAE to Kenya instantly and right from the LYPA app on your
               phone.
             </p>
-            <!-- App Store Buttons -->
             <div class="flex gap-4">
               <img src="/images/appstore.png" alt="App Store" class="w-32 h-auto" />
               <img src="/images/Image95.png" alt="Google Play" class="w-32 h-auto" />
@@ -62,12 +65,12 @@
 
         <!-- Right side (form) -->
         <div
-          class="flex flex-col justify-start gap-y-6 bg-gradient-to-r from-[#F5F8F9] to-[#D5DFE2] text-[#001c5e] p-8 shadow-xl w-full max-w-[700px] min-h-[700px]"
+          class="flex flex-col justify-between gap-y-6 bg-gradient-to-r from-[#F5F8F9] to-[#D5DFE2] text-[#001c5e] p-8 shadow-xl w-full max-w-[1000px] min-h-[200px]"
         >
-          <!-- Country selector -->
+          <!-- Country Selector -->
           <div class="flex items-center gap-4 rounded-full px-6 py-2 shadow-lg bg-white mt-8">
             <img src="/images/uae.png" alt="UAE Flag" class="h-7 w-12" />
-            <span class="font-semibold text-3xl pl-10 m-4">United Arab Emirates</span>
+            <span class="font-semibold text-2xl pl-10 m-4">United Arab Emirates</span>
             <span class="ml-auto text-[#FB527E]">▼</span>
           </div>
 
@@ -140,11 +143,7 @@
         <div
           class="flex flex-col items-center shadow-lg bg-white rounded-[30px] w-[320px] h-[320px] p-6"
         >
-          <img
-            class="w-[150px] h-[19 0px]"
-            src="/images/Image97.png"
-            alt="Airtime Topup"
-          />
+          <img class="w-[150px] h-[19 0px]" src="/images/Image97.png" alt="Airtime Topup" />
           <div class="text-xl text-[#142944] mt-4 font-semibold text-center m-auto">
             Airtime Topup
           </div>
