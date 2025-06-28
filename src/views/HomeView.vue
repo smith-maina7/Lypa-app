@@ -11,7 +11,7 @@ import { RouterLink } from 'vue-router'
     >
       <!-- Background Image Layer -->
       <div
-        class="absolute bottom-0 left-1/2 transform -translate-x-[65%] w-[881px] h-[359px] bg-[url('/images/hands.png')] bg-no-repeat bg-contain bg-center pointer-events-none"
+        class="absolute bottom-0 left-1/2 transform -translate-x-[63%] w-[581px] h-[400px] bg-[url('/images/hands.png')] bg-no-repeat bg-contain bg-center pointer-events-none"
       ></div>
 
       <!-- Top Content -->
@@ -31,7 +31,7 @@ import { RouterLink } from 'vue-router'
       <div class="flex-grow"></div>
 
       <!-- Bottom Buttons -->
-      <div class="flex gap-6 justify-center z-10 mb-10">
+      <div class="flex gap-6 justify-center z-10 mb-20">
         <button class="bg-[#3DD29B] text-white py-3 rounded-full font-semibold h-[44px] w-[139px]">
           Login
         </button>
