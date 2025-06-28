@@ -11,7 +11,7 @@ import { RouterLink } from 'vue-router'
     >
       <!-- Background Image Layer -->
       <div
-        class="absolute bottom-0 left-1/2 transform -translate-x-[63%] w-[581px] h-[400px] bg-[url('/images/hands.png')] bg-no-repeat bg-contain bg-center pointer-events-none"
+        class="absolute bottom-0 left-1/2 transform -translate-x-[63%] w-[581px] h-[359px] bg-[url('/images/hands.png')] bg-no-repeat bg-contain bg-center pointer-events-none"
       ></div>
 
       <!-- Top Content -->
