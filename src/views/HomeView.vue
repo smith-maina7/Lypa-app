@@ -20,7 +20,7 @@ import { RouterLink } from 'vue-router'
         <h1 class="text-5xl font-bold text-center">Lypa</h1>
 
         <!-- Tagline -->
-        <p class="text-4xl text-center font-semibold leading-snug mt-20">
+        <p class="text-4xl text-center font-semibold leading-snug mt-10">
           Send Money<br />
           To your<br />
           Loved ones
@@ -33,10 +33,10 @@ import { RouterLink } from 'vue-router'
       <!-- Bottom Buttons -->
       <div class="flex gap-6 justify-center z-10 mb-20">
         <button class="bg-[#3DD29B] text-white py-3 rounded-full font-semibold h-[44px] w-[139px]">
-          Login
+          <router-link to="/signin">Login</router-link>
         </button>
         <button class="bg-white text-[#043682] py-3 rounded-full font-semibold h-[44px] w-[139px]">
-          Join
+          <router-link to="/signup">Join</router-link>
         </button>
       </div>
     </section>
