@@ -4,7 +4,47 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <main>
-    <section id="hero" class="min-h-screen bg-gradient-to-r from-[#084698] to-[#001C5E] text-white">
+    <!-- Mobile Hero -->
+    <section
+      id="mobile-hero"
+      class="relative min-h-screen bg-gradient-to-r from-[#001C5E] to-[#084CA0] text-white flex flex-col px-6 pt-10 pb-10 lg:hidden overflow-hidden"
+    >
+      <!-- Background Image Layer -->
+      <div
+        class="absolute bottom-0 left-1/2 transform -translate-x-[65%] w-[881px] h-[359px] bg-[url('/images/hands.png')] bg-no-repeat bg-contain bg-center pointer-events-none"
+      ></div>
+
+      <!-- Top Content -->
+      <div class="z-10 flex flex-col items-center">
+        <!-- Logo -->
+        <h1 class="text-5xl font-bold text-center">Lypa</h1>
+
+        <!-- Tagline -->
+        <p class="text-4xl text-center font-semibold leading-snug mt-20">
+          Send Money<br />
+          To your<br />
+          Loved ones
+        </p>
+      </div>
+
+      <!-- Spacer to push buttons to bottom -->
+      <div class="flex-grow"></div>
+
+      <!-- Bottom Buttons -->
+      <div class="flex gap-6 justify-center z-10 mb-10">
+        <button class="bg-[#3DD29B] text-white py-3 rounded-full font-semibold h-[44px] w-[139px]">
+          Login
+        </button>
+        <button class="bg-white text-[#043682] py-3 rounded-full font-semibold h-[44px] w-[139px]">
+          Join
+        </button>
+      </div>
+    </section>
+
+    <section
+      id="desktop-hero"
+      class="hidden lg:grid grid-cols-1min-h-screen bg-gradient-to-r from-[#084698] to-[#001C5E] text-white"
+    >
       <!-- Header & Nav -->
       <header>
         <nav class="flex justify-around items-center text-white">
@@ -117,51 +157,65 @@ import { RouterLink } from 'vue-router'
         </div>
       </div>
     </section>
-    <section id="cards" class="bg-linear-to-r from-[#F5F8F9] to-[#E4E4E4] min-h-full flex flex-col">
-      <div class="flex flex-col flex-wrap w-xl flex-grow m-auto mt-12 gap-10">
-        <p class="text-5xl text-[#142944] font-semibold mx-10">
-          All Your Payments In <span class="inline-block mx-30">one place</span>
+    <section
+      id="cards"
+      class="bg-gradient-to-r from-[#F5F8F9] to-[#E4E4E4] min-h-full flex flex-col px-4 py-10"
+    >
+      <!-- Heading Section -->
+      <div class="flex flex-col items-center text-center max-w-3xl mx-auto gap-6">
+        <p class="text-3xl sm:text-4xl md:text-5xl text-[#142944] font-semibold">
+          All Your Payments In <span class="block sm:inline">one place</span>
         </p>
-        <div class="text-lg text-[#142944]">
-          LYPA App helps with more than just sending money. You can easily
-          <span class="text-lg inline-block mx-12"
-            >make bill payments and even recharge mobile airtime</span
-          >
-          <span class="text-lg inline-block mx-27">Instantly. All in one APP, Lypa App.</span>
+        <div class="text-base sm:text-lg text-[#142944] leading-relaxed">
+          LYPA App helps with more than just sending money.
+          <span class="block sm:inline">Make bill payments and recharge mobile airtime</span>
+          <span class="block sm:inline">instantly. All in one APP, Lypa App.</span>
         </div>
       </div>
-      <div class="flex flex-wrap justify-center gap-15 mt-20 py-10">
+
+      <!-- Cards Section -->
+      <div class="flex flex-wrap justify-center gap-6 mt-12">
         <!-- Card 1 -->
         <div
-          class="flex flex-col items-center shadow-lg bg-white rounded-[30px] w-[320px] h-[320px] p-6"
+          class="flex flex-col items-center shadow-lg bg-white rounded-[30px] w-[280px] sm:w-[300px] h-[300px] p-6"
         >
-          <img class="w-[200px] h-[200px]" src="/images/Image96.png" alt="Bill Payments" />
-          <div class="text-xl text-[#142944] mt-4 font-semibold text-center">Bill Payments</div>
+          <img class="w-[160px] h-[160px]" src="/images/Image96.png" alt="Bill Payments" />
+          <div class="text-lg sm:text-xl text-[#142944] mt-4 font-semibold text-center">
+            Bill Payments
+          </div>
         </div>
 
         <!-- Card 2 -->
         <div
-          class="flex flex-col items-center shadow-lg bg-white rounded-[30px] w-[320px] h-[320px] p-6"
+          class="flex flex-col items-center shadow-lg bg-white rounded-[30px] w-[280px] sm:w-[300px] h-[300px] p-6"
         >
-          <img class="w-[150px] h-[19 0px]" src="/images/Image97.png" alt="Airtime Topup" />
-          <div class="text-xl text-[#142944] mt-4 font-semibold text-center m-auto">
+          <img class="w-[140px] h-[140px]" src="/images/Image97.png" alt="Airtime Topup" />
+          <div class="text-lg sm:text-xl text-[#142944] mt-4 font-semibold text-center">
             Airtime Topup
           </div>
         </div>
 
         <!-- Card 3 -->
         <div
-          class="flex flex-col items-center shadow-lg bg-white rounded-[30px] w-[320px] h-[320px] p-6 mb-30"
+          class="flex flex-col items-center shadow-lg bg-white rounded-[30px] w-[280px] sm:w-[300px] h-[300px] p-6"
         >
-          <img class="w-[200px] h-[200px]" src="/images/world.png" alt="Send Money" />
-          <div class="text-xl text-[#142944] mt-4 font-semibold text-center">Send Money</div>
+          <img class="w-[160px] h-[160px]" src="/images/world.png" alt="Send Money" />
+          <div class="text-lg sm:text-xl text-[#142944] mt-4 font-semibold text-center">
+            Send Money
+          </div>
         </div>
       </div>
     </section>
-    <section id="footer" class="bg-linear-to-r from-[#084CA0] to-[#084698] min-h-1/3">
-      <div class="bg-linear-to-t from-[#084CA0] to-[#084698] text-white py-10 text-center">
-        <p class="text-4xl font-bold leading-tight my-4">Start Sending Money<br />Stress Free</p>
-        <div class="my-4 flex justify-center space-x-4 text-[#6AED75] text-sm font-semibold">
+
+    <!-- Footer -->
+    <section id="footer" class="bg-gradient-to-r from-[#084CA0] to-[#084698] py-10">
+      <div class="text-white text-center max-w-4xl mx-auto px-4">
+        <p class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-6">
+          Start Sending Money<br />Stress Free
+        </p>
+        <div
+          class="flex flex-wrap justify-center gap-2 sm:gap-4 text-[#6AED75] text-xs sm:text-sm font-semibold"
+        >
           <span>Great Exchange Rates</span>
           <span>*</span>
           <span>Super Fast Transfers</span>
